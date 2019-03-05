@@ -53,7 +53,7 @@ In the UI, users will see something like this:
 
 ![screenshot of dynamic dropdown in Zap Editor](https://cdn.zapier.com/storage/photos/dd31fa761e0cf9d0abc9b50438f95210.png)
 
-In the above code example the `dynamic` property makes reference to a resource. If you need to use a trigger to power a dynamic dropdown simply make reference to the triggers key.
+In the above code example the `dynamic` property makes reference to a resource. If you need to use a trigger to power a dynamic dropdown only make reference to the trigger's key.
 
 ```js
 //...
@@ -69,7 +69,7 @@ issue: {
           required: true,
           label: 'Project',
           dynamic: 'project.id.name'
-        }, // will call the trigger in the file project.js
+        }, // will call the perform method of the trigger with the key: 'project'
         {
           key: 'title',
           required: true,
