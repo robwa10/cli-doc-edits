@@ -167,7 +167,7 @@ const App = {
             {
               key: 'assignee_id',
               label: 'Assignee',
-              dynamic: 'assignee.id.name'
+              dynamic: 'assignee.id.name',
               helpText: 'Who would you like to assignee the project to?'
             }
           ]
@@ -178,7 +178,7 @@ const App = {
 };
 ```
 
-If you want your trigger to perform specific scripting for a dynamic dropdown then use of `bundle.meta.prefill`. This can be useful if your dropdown needs to make use of [pagination](#whats-the-deal-with-pagination-when-is-it-used-and-how-does-it-work) to load more options.  
+If you want your trigger to perform specific scripting for a dynamic dropdown then use `bundle.meta.prefill`. This can be useful if your dropdown needs to make use of [pagination](#whats-the-deal-with-pagination-when-is-it-used-and-how-does-it-work) to load more options.  
 
 ```js
 const App = {
